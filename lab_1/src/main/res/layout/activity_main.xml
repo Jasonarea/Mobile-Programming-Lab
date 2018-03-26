@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:id = "@+id/myTableLayout"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation="vertical" >
+    <!-- Set layout_gravity to locate the button to the centor of the layout-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/change"
+        android:layout_gravity="center" />
+
+    <!--Use FrameLayout to overlap two photos-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/android"
+            android:id = "@+id/image1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/android2"
+            android:id = "@+id/image2"/>
+    </FrameLayout>
+</LinearLayout>

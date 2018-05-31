@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:stretchColumns="*">
+
+    <TableRow>
+        <TextView
+            android:text = "이름"/>
+        <EditText
+            android:id = "@+id/studentName"
+            android:layout_span = "4"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text = "학번"/>
+        <EditText
+            android:id = "@+id/num"
+            android:layout_span = "4"/>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_column="2"
+            android:text="추가" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_column="3"
+            android:text="삭제" />
+    </TableRow>
+    <TableRow>
+        <ListView
+            android:id = "@+id/listView"
+            android:layout_span = "5"/>
+    </TableRow>
+</TableLayout>
